@@ -1,0 +1,28 @@
+.sidenav{
+    position: absolute;
+    float: left;
+    max-width: 297px;
+   background-color: #000; opacity: 0.7;
+}
+    
+.navlinks{
+    text-decoration:none;
+    font-weight: 900;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+   display:flex ;
+
+}
+
+a.link{
+    text-color:#9b9595;
+    
+}
+
+a:hover{
+    text-color:#fff;
+    
+}
+a:visited {
+    color: #eee;
+  }
