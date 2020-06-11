@@ -40,12 +40,69 @@
 </div>
 <!--This is where page 1 ends-->
 
+<!--This is where FAQs start-->
  <div class="page" id="page2">
     <div class="FAQ" id="box">
-        <b style="margin-left: 109px;">FAQs</b>
+        <b>FAQs</b>
+    </div>
+
+ <div>
+
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left ">  Who is a College Ambassador?</button>
+    <div class="panel">
+      <p>A College Ambassador is the face of Techfest. They act as a link between Techfest and their college.They are the first point of contact for any student of the college</p>
+    </div>
+    
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">What is the eligibility to become a College Ambassador?</button>
+    <div class="panel">
+        <p>A College Ambassador is the face of Techfest. They act as a link between Techfest and their college.They are the first point of contact for any student of the college</p>
+    </div>
+    
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">How much time and effort is expected from me?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">Can there be more than one College Ambassodor from a College?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">What do I do if my points aren't updated?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">How should I apply?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">What kind of events will I be responsible for, as a CA?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
     </div>
 </div> 
-
+<!--This is where FAQs ends-->
 
 
 
