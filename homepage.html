@@ -3,12 +3,16 @@
 <head>
     <title>Techfest CA Portal</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
  
 
-<nav>
+<nav class="navbar">
   <img src="images/logo_nav.png" width=100% height=100px>
   <div class=flex-container>    
     <a class="navlinks" href="#ABOUT">ABOUT US</a>
@@ -46,42 +50,53 @@
         <b>FAQs</b>
     </div>
 
- <div>
+   <div class="wrapper">
 
-    <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left ">  Who is a College Ambassador?</button>
-    <div class="panel">
+    <button class="accordion"> <img src="images/plus.png"  height=20px width=20px style="float:left ">  Who is a College Ambassador?</button>
+    <div class="accordion_body">
       <p>A College Ambassador is the face of Techfest. They act as a link between Techfest and their college.They are the first point of contact for any student of the college</p>
     </div>
     
     <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">What is the eligibility to become a College Ambassador?</button>
-    <div class="panel">
+    <div class="accordion_body">
         <p>A College Ambassador is the face of Techfest. They act as a link between Techfest and their college.They are the first point of contact for any student of the college</p>
     </div>
     
     <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">How much time and effort is expected from me?</button>
-    <div class="panel">
+    <div class="accordion_body">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">Can there be more than one College Ambassodor from a College?</button>
-    <div class="panel">
+    <div class="accordion_body">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">What do I do if my points aren't updated?</button>
-    <div class="panel">
+    <div class="accordion_body">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">How should I apply?</button>
-    <div class="panel">
+    <div class="accordion_body">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <button class="accordion"> <img src="images/plus.png" height=20px width=20px style="float:left">What kind of events will I be responsible for, as a CA?</button>
-    <div class="panel">
+    <div class="accordion_body">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+
+  <!--   <script>
+        $(document).ready(function(){
+         
+          $("accordion").click(function(e){
+            e.preventDefault();
+            $("accordion_body p").hide();
+            $(this).next('p').show();
+          });
+        });
+    </script>   -->
 
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -90,17 +105,17 @@
         for (i = 0; i < acc.length; i++) {
           acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
+            var accordion_body = this.nextElementSibling;
+            if (accordion_body.style.display === "block") {
+              accordion_body.style.display = "none";
             } else {
-              panel.style.display = "block";
+              accordion_body.style.display = "block";
             }
           });
         }
-        </script>
+        </script>  
 
-    </div>
+  </div>
 </div> 
 <!--This is where FAQs ends-->
 
